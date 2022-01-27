@@ -24,13 +24,13 @@ def solution(number, target):
     def dfs(index,value):
         nonlocal answer
         nonlocal target
-        # print(answer, index, value ,leng)
+        print(answer, index, value ,leng)
         if index >= leng and target == value:
             answer +=1
             return
         if index >= leng:
             return
-        # print("+ " + str(answer), index, value)
+
         dfs(index+1,value+number[index])
 
         dfs(index + 1, value - number[index])
