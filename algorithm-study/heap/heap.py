@@ -20,7 +20,7 @@ import heapq
 
 
 def solution(k,lst):
-    print(heapq.nlargest(k,lst)[-1])
+    print(heapq.nlargest(k,lst))
 
 
 
