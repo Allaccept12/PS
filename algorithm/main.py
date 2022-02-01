@@ -10,8 +10,11 @@
 import collections
 
 if __name__ == '__main__':
-    temp = [1,2,3]
-    print(temp[:])
+    # 사전순으로 wait이 빠름
+    result = []
+
+    result.append("wont") if 'wont'<'wait' else result.append("wait")
+    print(result)
 
 
 
